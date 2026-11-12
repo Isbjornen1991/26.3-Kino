@@ -171,7 +171,7 @@ h1 {
   background: #10b981;
   border-color: #10b981;
   color: #fff;
-  box-shadow: 0 0 8px rgba(16, 185, 129, 0.4);
+  box-shadow: 0 0 8px #10b981;
 }
 
 /* Forklaring av setestatus */
