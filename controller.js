@@ -9,7 +9,11 @@ function toggleSeat(row, number) {
   let selectedShowingId = model.viewState.selectedShowingId;
   let selectedSeats = model.viewState.selectedSeats;
 
-  if (!selectedShowingId) return;
+  if (!selectedShowingId) {
+    model.viewState.message = "Du må velge en visning først.";
+    updateView();
+    return;
+  }
 
   if (isSeatTaken(row, number, selectedShowingId)) {
     model.viewState.message = "Dette setet er allerede reservert.";
